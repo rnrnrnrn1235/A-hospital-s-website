@@ -1,0 +1,191 @@
+*{
+   font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo img{
+   display: block;
+   width:250px;
+   margin:auto;
+   padding-bottom: 20px;
+}
+body{
+ margin:0px;
+ padding: 0px;
+}
+
+h1{ 
+font-family:'Times New Roman', Times, serif;
+text-align: center;
+font-weight:lighter;
+font-size: 50px;
+}
+main{
+margin: 20px;
+}
+
+.navbar{
+   display: flex;
+   border: 5px;
+   border-style:ridge;
+   box-shadow: 3px 3px 5px;
+   justify-content: space-evenly;
+   height:75px;
+   background-color: darkslategray;
+}
+.navbar ul{
+   list-style-type: none;
+   position: absolute;
+}
+
+.navbar li{
+   float: left;
+   text-align:justify;
+   font-size: 20px;
+   border-bottom: 0px;
+   border-left:5px;
+   border-right:5px;
+   border-top:0px;
+   border-style:ridge;
+   box-shadow: 3px 0px 5px;
+}
+.navbar a{
+   font-weight: bold;
+   color:white;
+   width: 150px;
+   text-decoration: none;
+   text-align: center;
+   line-height: 10px;
+   padding: 20px;
+   display: block;
+}
+
+.navbar li:hover{
+   background-color:rgb(18, 63, 63);
+}
+
+#dropdown{
+   padding:0px;
+   border: 5px;
+   border-style:ridge;
+   box-shadow: 3px 3px 5px;
+   background-color: darkslategray;
+   position: absolute;
+   display:none;
+  text-wrap:stable;
+   float: none;
+}
+#dropdown a{
+   line-height:20px;
+}
+li:hover #dropdown{
+   display: block;
+   float: none;
+}
+
+.book {
+   align-items: center;
+   flex-wrap: wrap;
+}
+
+.book form {
+   margin: 7px 14px;
+   flex: 50px;
+   background: whitesmoke;
+   border: 2px solid black;
+   box-shadow: ghostwhite;
+   text-align: center;
+   padding: 4px 8px;
+   border-radius: 20px;
+
+}
+
+.box {
+   width: 50%;
+   margin: 10px;
+   border-radius: 8px;
+   border: 2px solid black;
+   font-size: 20px;
+   color: black;
+   text-transform: none;
+   padding: 10px 20px;
+
+}
+
+.btn {
+   display: block;
+   width: 250px;
+   margin: 20px auto;
+   padding: 7px 14px;
+   background:cadetblue;
+   color: white;
+   border: 1px solid black;
+   font-size: 17px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-transform: capitalize;
+}
+
+.btn:hover {
+   background: white;
+   color: black;
+}
+
+.book h3 {
+   color: black;
+   padding-bottom: 5px;
+   font-size: 20px;
+}
+.subscribe{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+}
+.info{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width:22%;
+   margin: 20px 40px;
+   background: whitesmoke;
+   text-align: center;
+   padding: 12px 24px;
+   border-radius: 10px;
+   border: 2px solid black;
+   box-shadow: ghostwhite;
+}
+.info input{
+
+   width: 50%;
+   margin: 20px;
+   border-radius: 12px;
+   border: 2px solid black;
+   font-size: 15px;
+   color: black;
+   text-transform: none;
+   padding: 10px 20px;
+ 
+}
+
+
+
+
+.log{
+   display: block;
+   width: 120px;
+   margin: 10px auto;
+   padding: 4px 8px;
+   background:cadetblue;
+   color: white;
+   border: 1px solid black;
+   font-size: 17px;
+   border-radius: 5px;
+   cursor: pointer;
+   text-transform: capitalize;
+
+}
+
+.log:hover {
+   background: white;
+   color: black;
+}

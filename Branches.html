@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Hospital</title>
+    <link rel="stylesheet" href="mai2style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .branch {
+            margin: 20px;
+        }
+
+        .branch img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .branch-info {
+            margin-top: 10px;
+        }
+        footer {
+            padding-top: 30px;
+            height: 75px;
+            background-color: darkslategray;
+            text-align: center;
+        }
+
+        footer a {
+            font-size: 20px;
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img style="background-size: cover; width:100%; height: 250px;" class="banner" src="images/BANNER.jpg" alt="banner">
+        <div class="logo">
+          <img src="images/LOGO.jpg" alt = "Aman hospital">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="reg.html">Register</a></li>
+                <li><a href="form.html">Login</a></li>
+                <li><a href="Complaints.html">Complaints</a></li>
+                <li><a href="Branches.html">Branches</a></li>
+    
+                <li>
+                    <a id ="null" href="">Clinics</a>
+                    <ul id="dropdown">
+                        <li><a href="Department of Orthopedic.html">Orthopedic</a></li>
+                        <li><a href="Department of Neurology.html">Neurology</a></li>
+                        <li><a href="Department of Internal Medicine.html">General Internal Medicine</a></li>
+                        <li><a href="Department of Pediatrics.html">Pediatric</a></li>
+                        <li><a href="Department of Dentistry.html">Dentistry</a></li>
+                        <li><a href="Gynecology and obstetrics.html">Gynecology and obstetrics</a></li>
+                        <li><a href="Intensive care.html">Intensive care & more</a></li>
+                        
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="navbar">
+    </div>
+    <main>
+        <button id="dark-mode-toggle">Toggle Dark Mode</button>
+        <script>
+            document.getElementById('dark-mode-toggle').addEventListener('click', function () {
+                document.body.classList.toggle('dark-mode');
+            });
+        </script>
+
+        <div class="branches">
+            <h1> Hospital Branches </h1>
+        </div>
+        <div class="branch 1">
+            <ul>
+                <li>
+                <h2> Maadi branch </h2>
+                </li>
+            </ul>
+            
+            <img style="display: block; margin: 0 auto ; max-width: 700px; max-height: 700px; margin-top: 20px;" src="images/branches 5th.jpg" alt="Branch Image">
+            <div class="branch-info">
+                <p>Address: 19/61 10th Row, Zahraa Al Maadi- Cairo- Egypt</p>
+                <p>Phone: +1 234-567-890</p>
+                <hr>
+            </div>
+             <div class="branch 2">
+                <ul>
+                    <li>
+                        <h2> Heliopolis branch </h2>
+                    </li>
+                </ul>
+                
+                <img style="display: block; margin: 0 auto ; max-width: 700px; max-height: 900px; margin-top: 20px;" src="images/DSC_3771-1160x430.jpg" alt="Branch Image">
+                <div class="branch-info">
+                    <p>Address: 11-12 Mustafa Refaat street, 6th floor- Office No.602-Sheraton Heliopolis-Cairo-Egypt</p>
+                    <p>Phone: +1 234-567-890</p>
+                    <hr>
+                </div>
+               <div class="branch 3">
+                    <ul>
+                        <li>
+                            <h2> El-Moqatam branch </h2>
+                        </li>
+                    </ul>
+                    
+                    <img style="display: block; margin: 0 auto ; max-width: 600px; max-height: 600px; margin-top: 20px;"
+                        src="images/aman-hospital55-1651648640.webp" alt="Branch Image">
+                    <div class="branch-info">
+                        <p>Address: 6223 Hassan El-Akbar st., El-Moqatam, Cairo, Egypt</p>
+                        <p>Phone: +1 234-567-890</p>
+                    </div>
+
+            </div>
+
+        </div>
+    </main>
+
+   
+        <footer style=" padding-top: 30px; height:75px; background-color: darkslategray;">
+            <a id="contact"
+                style=" padding-left: 20px; font-size: 20px; color: white; font-weight:bold; text-decoration: none;"
+                href="mailto: team_project@outlook.com">
+                Contact us</a>
+    
+    
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.skype.com/" class="fa fa-skype"></a>
+    
+            <a id="subscribe" onmouseover="mOver(this)" onmouseout="mOut(this)"
+                style=" padding-left: 20px; font-size: 20px; color: white; font-weight:bold; text-decoration: none;"
+                href="subscribe.html">Subscribe</a>
+    
+            <script>
+                function mOver(obj) {
+                    obj.innerHTML = "We have great offers"
+                }
+
+                function mOut(obj) {
+                    obj.innerHTML = "Subscribe"
+                }
+            </script>
+        </footer>
+    
+</body>
+
+</html>

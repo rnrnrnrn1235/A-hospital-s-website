@@ -1,0 +1,268 @@
+*{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.logo img{
+    display: block;
+    width:250px;
+    margin:auto;
+    padding-bottom: 20px;
+}
+body{
+  margin:0px;
+  padding: 0px;
+}
+
+h1{ 
+font-family:'Times New Roman', Times, serif;
+ text-align: center;
+ font-weight:lighter;
+ font-size: 50px;
+}
+main{
+ margin: 20px;
+}
+
+.navbar{
+    display: flex;
+    border: 5px;
+    border-style:ridge;
+    box-shadow: 3px 3px 5px;
+    justify-content: space-evenly;
+    height:75px;
+    background-color: darkslategray;
+}
+.navbar ul{
+    list-style-type: none;
+    position: absolute;
+}
+
+.navbar li{
+    float: left;
+    text-align:justify;
+    font-size: 20px;
+    border-bottom: 0px;
+    border-left:5px;
+    border-right:5px;
+    border-top:0px;
+    border-style:ridge;
+    box-shadow: 3px 0px 5px;
+}
+.navbar a{
+    font-weight: bold;
+    color:white;
+    width: 150px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 10px;
+    padding: 20px;
+    display: block;
+}
+
+.navbar li:hover{
+    background-color:rgb(18, 63, 63);
+}
+
+ #dropdown{
+    padding:0px;
+    border: 5px;
+    border-style:ridge;
+    box-shadow: 3px 3px 5px;
+    background-color: darkslategray;
+    position: absolute;
+    display:none;
+   text-wrap:stable;
+    float: none;
+ }
+#dropdown a{
+    line-height:20px;
+}
+ li:hover #dropdown{
+    display: block;
+    float: none;
+}
+#null{
+    pointer-events:none;
+}
+.guidelines ul li {
+
+    margin: 30px;
+}
+
+.ICUS ul li {
+    margin: 30px;
+}
+.expect ul li{
+    margin: 30px;
+}
+.compassion ul li {
+    margin: 20px;
+    list-style-type: none;
+    min-width: 200px;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;  
+}
+.compassion li:hover{
+    color: rgb(244, 114, 92);
+}
+.crediblity ul li {
+    margin: 20px;
+    list-style-type: none;
+    min-width: 200px;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;  
+}
+.crediblity li:hover{
+    color: rgb(244, 114, 92);
+}
+.excellence ul li {
+    margin: 20px;
+    list-style-type: none;
+    min-width: 200px;
+    transition-property: color;
+    transition-duration: 0.25s;
+    transition-timing-function: linear;  
+}
+.excellence li:hover{
+    color: rgb(244, 114, 92);
+}
+.all{ 
+    text-align:left;
+    max-width: 250px;
+    margin-right:40px ;
+    margin-left:150px;
+   }
+
+.mission ul li{
+    margin-bottom: 20px;
+    border: 5px;
+    border-style:ridge;
+    box-shadow: 7px 4px 5px;
+    width: 750px; 
+    list-style-type: none; 
+    min-width: 750px;
+    transition-property: background-color;
+    transition-duration: 2s;
+    transition-timing-function:linear;
+}
+.mission li:hover{
+    background-color: rgb(147, 186, 240);
+}
+.why ul li{
+    margin-bottom: 20px;
+   font-size: large;
+   border: 5px;
+   border-style:ridge;
+   box-shadow: 7px 4px 5px;
+   width: 750px; 
+   list-style-type: none; 
+   min-width: 750px;
+   transition-property: background-color;
+   transition-duration: 2s;
+   transition-timing-function:linear;
+}
+.why li:hover{
+    background-color: rgb(147, 186, 240);
+}
+.why p{
+    font-size: large;
+    padding-bottom: 10px;
+}
+#exp{
+    display: block; 
+    width: 300px;  
+     border: 7px;
+    border-style:solid;
+    border-color: gray;
+     box-shadow: 5px 5px 5px;
+      padding-bottom: 20px;
+      transition-property: color width;
+      transition-duration: 1s;
+      transition-timing-function: linear;
+    }
+    #exp:hover {
+    background-color: rgb(147, 186, 240);
+    width:400px;
+    }
+    #icus{
+        padding-bottom: 20px;
+        padding-top: 40px;
+        display: block; 
+       width: 300px;  
+        border: 7px;
+       border-style:solid;
+       border-color: gray;
+        box-shadow: 5px 5px 5px;
+         padding-bottom: 20px;
+         transition-property: color width;
+         transition-duration: 1s;
+         transition-timing-function: linear;
+    }
+    #icus:hover {
+        width:400px;
+        background-color: rgb(147, 186, 240);
+    }
+    #guide {
+        padding-bottom: 20px;
+        padding-top:40px;
+        display: block; 
+       width: 300px;  
+        border: 7px;
+       border-style:solid;
+       border-color: gray;
+        box-shadow: 5px 5px 5px;
+         padding-bottom: 20px;
+         transition-property: color width;
+         transition-duration: 1s;
+         transition-timing-function: linear;
+    
+    }
+
+    #guide:hover {
+        width:400px;
+        background-color: rgb(147, 186, 240);
+    }
+
+    #intensive {
+        color: white; 
+        display: block; 
+        width: 400px;
+         background-color:rgb(18, 63, 63);
+         font-size: 50px;
+         margin-left:550px;
+         border: 7px;
+        border-style:solid;
+        border-color: gray;
+        box-shadow: 5px 7px 5px;
+        transition-property: color;
+        transition-duration: 2s;
+        transition-timing-function: linear;
+    }
+    #intensive:hover {
+        color: black;
+    }
+#leh{
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function:linear;
+}
+#leh:hover{
+   color: rgb(147, 186, 240);
+}
+#miss{
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+}
+#miss:hover{
+    color: rgb(147, 186, 240);
+}
+#val{
+    transition-property: color;
+    transition-duration: 1s;
+    transition-timing-function: linear;  
+}
+#val:hover{
+color: rgb(244, 114, 92);
+}

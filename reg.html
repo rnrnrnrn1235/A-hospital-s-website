@@ -1,0 +1,352 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <link rel="stylesheet" href="gstyle.css">
+    <title> Aman hospital</title>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .fa {
+            padding: 1px;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+        }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-google {
+            background: #dd4b39;
+            color: white;
+        }
+
+        .fa-linkedin {
+            background: #007bb5;
+            color: white;
+        }
+
+        .fa-youtube {
+            background: #bb0000;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        .fa-pinterest {
+            background: #cb2027;
+            color: white;
+        }
+
+        .fa-snapchat-ghost {
+            background: #fffc00;
+            color: white;
+            text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        }
+
+        .fa-skype {
+            background: #00aff0;
+            color: white;
+        }
+
+        .fa-android {
+            background: #a4c639;
+            color: white;
+        }
+
+        .fa-dribbble {
+            background: #ea4c89;
+            color: white;
+        }
+
+        .fa-vimeo {
+            background: #45bbff;
+            color: white;
+        }
+
+        .fa-tumblr {
+            background: #2c4762;
+            color: white;
+        }
+
+        .fa-vine {
+            background: #00b489;
+            color: white;
+        }
+
+        .fa-foursquare {
+            background: #45bbff;
+            color: white;
+        }
+
+        .fa-stumbleupon {
+            background: #eb4924;
+            color: white;
+        }
+
+        .fa-flickr {
+            background: #f40083;
+            color: white;
+        }
+
+        .fa-yahoo {
+            background: #430297;
+            color: white;
+        }
+
+        .fa-soundcloud {
+            background: #ff5500;
+            color: white;
+        }
+
+        .fa-reddit {
+            background: #ff5700;
+            color: white;
+        }
+
+        .fa-rss {
+            background: #ff6600;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img style="background-size: cover; width:100%; height: 250px;" class="banner" src="images/BANNER.jpg" alt="banner">
+        <div class="logo">
+            <img src="images/LOGO.jpg" alt="Aman hospital">
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Booking.html">Booking</a></li>
+                <li><a href="reg.html">Register</a></li>
+                <li><a href="form.html">Login</a></li>
+                <li><a href="Complaints.html">Complaints</a></li>
+                <li><a href="Branches.html">Branches</a></li>
+    
+
+                <li>
+                    <a id="null" href="">Clinics</a>
+                    <ul id="dropdown">
+                        <li><a href="Department of Orthopedic.html">Orthopedic</a></li>
+                        <li><a href="Department of Neurology.html">Neurology</a></li>
+                        <li><a href="Department of Internal Medicine.html">General Internal Medicine</a></li>
+                        <li><a href="Department of Pediatrics.html">Pediatric</a></li>
+                        <li><a href="Department of Dentistry.html">Dentistry</a></li>
+                        <li><a href="Gynecology and obstetrics.html">Gynecology and obstetrics</a></li>
+                        <li><a href="Intensive care.html">Intensive care & more</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <table style="width:100%;" border="20">
+        <tr>
+
+            </h2>
+            <br />
+            <td width="350">
+                <video width="320" height="150" controls autoplay>
+                    <source src="images/movie.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </td>
+            <td align="center" color="blue" border="20" style="background-color:lightblue;">
+
+                <h2 style="background-color:DodgerBlue;">
+                    <font color="darkblue">
+                        Regidteration form<br />
+                        Fill out the data completely
+                    </font>
+                </h2><br />
+            </td>
+            <td>
+                <img src="images/image.jpg" alt="Aman hospital" width="320">
+            </td>
+        </tr>
+        <tr>
+            <td style="background-color:whitesmoke" align="left">
+                <h3 style="color:darkblue">
+                    Your information will appear here if you are registered <br /><br />
+                    <b><div id="result"></div></b>
+                </h3>
+
+            </td>
+            <td align="left" dir="ltr" border="20" style="background-image: url(transparent.png)">
+                <b>
+                    <script>
+
+
+                        function printinfo() {
+                            let a = document.forms["myform"]["fname"].value;
+                            let b = document.forms["myform"]["Radio1"].checked ? "male" : "female";
+                            let d = document.forms["myform"]["day"].value;
+                            let e = document.forms["myform"]["month"].value;
+                            let f = document.forms["myform"]["year"].value;
+                            let h = document.forms["myform"]["username"].value;
+                            let k = document.forms["myform"]["emai"].value;
+                            let l = document.forms["myform"]["Mobile"].value;
+                            let m = document.forms["myform"]["Checkbox1"].checked ? "Mobile(sms)" : "";
+                            let n = document.forms["myform"]["Checkbox2"].checked ? "E-mail" : "";
+                            let o = document.forms["myform"]["file"].value;
+                            let result = "Registration has been completed successfully. We are honored to have you join" + "<br />" + "<br />" + "Full Name: " + a + "<br>" + "<br />" +
+                                "Gender: " + b + "<br>" +
+                                "Date of Birth: " + d + "  " + e + "  " + f + "<br>" + "<br />" +
+                                "Username: " + h + "<br>" + "<br />" +
+                                "Email: " + k + "<br>" + "<br />" +
+                                "Mobile: " + l + "<br>" + "<br />" +
+                                "Preferred Means of Communication: " + m + " " + n + "<br>" + "<br />" +
+                                "File: " + o + "<br />" + "<br />";
+
+                            document.getElementById("result").innerHTML = result;
+
+                            if (o) {
+                                let imgElement = document.createElement("img");
+                                imgElement.src = o;
+                                document.getElementById("result").appendChild(imgElement);
+                            }
+
+
+                        }
+
+                        function validateForm() {
+                            let x = document.forms["myform"]["Password1"].value;
+                            let y = document.forms["myform"]["Password2"].value;
+
+                            if (x !== y) {
+                                alert("password does not match");
+                                return false;
+                            }
+                        }</script>
+
+                    <font color="darkblue" size="4">
+                        <form action="form2.html" name="myform" method="post" onsubmit="event.preventDefault();  validateForm();  printinfo(); updateLocalStorage();">
+                            Full name:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            &nbsp;&nbsp;&nbsp;
+                            <input id="Text1" type="text" name="fname" required /><br /><br />
+                            Gender:<br /><br /> <input id="Radio1" type="radio" name="Radio1" />male<br />  <input id="Radio1" type="radio" name="Radio2" />female<br /><br />
+                            <label for="date">Date of birth:</label><br /><br />
+                            day <select id="day" name="day" required>
+                                <script>
+                                    for (i = 1; i <= 31; i++) {
+
+                                        document.write("<option value='day'> " + i + "</option > ");
+                                    }
+                                </script>
+                            </select>
+                            month<select id="month" name="month" required>
+                                <option value="January	">January</option>
+                                <option value="February	">February</option>
+                                <option value="March	">March</option>
+                                <option value="April	">April</option>
+                                <option value="May	">May</option>
+                                <option value="June	">June</option>
+                                <option value="July	">July</option>
+                                <option value="August	">August</option>
+                                <option value="September	">September</option>
+                                <option value="October	">October</option>
+                                <option value="November	">November</option>
+                                <option value="December	">December</option>
+                            </select>
+                            year<select id="year" name="year" required>
+                                <script>
+                                    for (i = 1970; i <= 2003; i++) {
+
+                                        document.write("<option value='year'> " + i + "</option > ");
+                                    }
+                                </script>
+                            </select><br /><br />
+                            Username:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <input id="Text1" type="text" name="username" required /><br><br>
+                            Password: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="Password1" type="password" name="Password1" required /><br><br>
+                            Retype password:&nbsp;<input id="Password2" type="password" name="Password2" required /><br><br>
+                            Email: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="email" type="email" name="emai" required /><br /><br />
+                            Governorate:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <select id="Select1" required name="Governorate">
+                                <option value="Cairo">Cairo	</option>
+                                <option value="Alexandria">Alexandria</option>
+                                <option value="Gizeh		">Gizeh	</option>
+                                <option value="Shubra El-Kheima		">Shubra El-Kheima	</option>
+                                <option value="Port Said		">Port Said	</option>
+                                <option value="Suez		">Suez	</option>
+                                <option value="Luxor		">Luxor	</option>
+                                <option value="al-Mansura		">al-Mansura	</option>
+                                <option value="El-Mahalla El-Kubra		">El-Mahalla El-Kubra	</option>
+                                <option value="Hurghada		">Hurghada	</option>
+                                <option value="Kafr el-Sheikh		">Kafr el-Sheikh	</option>
+                                <option value="Sohag		">Sohag	</option>
+                            </select><br /><br />
+                            Mobile:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input id="numb" type="number" name="Mobile" required min="11" border="25" /><br /><br />
+                            Preferred means of communication:<br /><br /> <input id="Checkbox1" type="checkbox" name="Checkbox1" />Mobile(sms)<br /><input id="Checkbox2" type="checkbox" name="Checkbox2" />E-mail<br /><br />
+                            Upload your image: <br /><br />
+                            <input id="File1" type="file" name="file" required /><br /><br />
+                            <center> <input id="Submit1" type="submit" value="submit" name="submit" /><input id="Reset1" type="reset" value="reset" /></center>
+                        </form>
+            </td>
+            <td width="350" align="char" style="background-color:lightblue;">
+                <img src="images/image4.jpg" alt="Aman hospital" width="320"><br />
+                <img src="images/image5.jpg" alt="Aman hospital" width="320"><br />
+
+                <img src="images/image3.jpg" alt="Aman hospital" width="320"><br />
+
+            </td>
+        </tr>
+    </table>
+    <center>
+        <footer style=" padding-top: 30px; height:75px; background-color: darkslategray;">
+            <a id="contact" style=" padding-left: 20px; font-size: 20px; color: white; font-weight:bold; text-decoration: none;" href="mailto: team_project@outlook.com">
+                Contact us
+            </a>
+
+
+            <a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/" class="fa fa-twitter"></a>
+            <a href="https://www.google.com/" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/" class="fa fa-youtube"></a>
+            <a href="https://www.instagram.com/" class="fa fa-instagram"></a>
+            <a href="https://www.skype.com/" class="fa fa-skype"></a>
+
+
+<a id="subscribe" onmouseover="mOver(this)" onmouseout="mOut(this)" style=" padding-left: 20px; font-size: 20px; color: white; font-weight:bold; text-decoration: none;" href="subscribe.html">Subscribe</a>
+
+<script>
+    function mOver(obj) {
+        obj.innerHTML = "We have great offers"
+    }
+
+    function mOut(obj) {
+        obj.innerHTML = "Subscribe"
+    }
+</script>
+        </footer>
+    </center>
+<script>
+    function updateLocalStorage() {
+        let h = document.forms["myform"]["username"].value;
+        let x = document.forms["myform"]["Password1"].value;
+        localStorage.setItem("storedUsername", h);
+        localStorage.setItem("storedPassword", x);
+    }
+
+</script>
+</body>
+</html> 
